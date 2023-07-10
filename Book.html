@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;  
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+      color: #333;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.5;
+    }
+    .main-container {
+      
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sub-container {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 10px;
+      background-position: center;
+      
+    }
+
+    .cover {
+      
+      background-image: url("https://www.addictionary.org/g/008-imposing-book-front-page-design-templates-free-download-high-resolution-1920_2045.jpg");
+      opacity: 1;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .secondpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    .thirdpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    .fourthpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    .fifthpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    .sixthpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    .seventhpage {
+      background-image: url("https://www.formsbirds.com/formhtml/7c23a80196dad560ce9a/q29sb3ec15c2377be972ad2672/bg1.png");
+      display: none;
+      z-index: -1;
+    }
+
+    /* Responsive Styles */
+    @media only screen and (max-width: 500px) {
+      .main-container {
+        padding: 10px;
+      }
+    }
+
+    #title {
+      position: absolute;
+      top: 70px;
+      
+    }
+
+    #footercover {
+      position: absolute;
+      bottom: 74px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+    <div class="sub-container cover" id="cover">
+      <h1 id="title">Java Important Notes</h1>
+      <p id="footercover">Written By: Vishal <br>
+        Created On: 2023/07/02
+      </p>
+    </div>
+    <div class="sub-container secondpage" id="secondpage">
+      <!-- Content for sub-container 2 -->
+      <q>What is an interface in Java?</q>
+      <p>
+        In Java, an interface is a reference type that defines a collection of abstract methods. It is a blueprint for classes to follow, specifying the methods that a class should implement. An interface can also include constant fields and default methods.
+
+        Here are some key points about interfaces in Java:
+        <ul>
+          <li>Declaration: An interface is declared using the <code>interface</code> keyword, followed by the interface name. It can include method declarations, constant fields, and default methods.</li>
+          <li>Method Signatures: In an interface, methods are declared without an implementation. They consist of method signatures, which specify the method name, parameters, and return type.</li>
+          <li>Abstraction: Interfaces are used to achieve abstraction in Java. They define a contract that classes implementing the interface must adhere to. Any class that implements an interface must provide an implementation for all the methods defined in that interface.</li>
+          <li>Multiple Inheritance: Java allows a class to implement multiple interfaces. This allows a class to inherit behavior from multiple sources by implementing the methods defined in those interfaces.</li>
+          <li>Access Modifiers: Interface methods are implicitly <code>public</code> and <code>abstract</code>. The fields are implicitly <code>public</code>, <code>static</code>, and <code>final</code>. In Java 8 and later versions, interfaces can also include <code>default</code> methods and <code>static</code> methods with implementations.</li>
+          <li>Implementing an Interface: To implement an interface, a class uses the <code>implements</I apologize, but I'm unable to render HTML or CSS directly in this text-based interface. However, you can copy the modified HTML and CSS code provided above and save it as an HTML file on your computer. Then, you can open the HTML file in a web browser to see the rendered page with the updated styles.
+          </li>
+          <li>Interface Inheritance: Interfaces can extend other interfaces using the <code>extends</code> keyword. This allows interfaces to inherit method declarations from other interfaces and create a hierarchy of interfaces.</li>
+        </ul>
+      </p>
+    </div>
+    <div class="sub-container thirdpage" id="thirdpage">
+      <!-- Content for sub-container 3 -->
+      <q>this and super keyword in Java</q>
+      <h1>Java 'this' and 'super' Keywords</h1>
+      <p>
+        In Java, <code>this</code> and <code>super</code> are keywords used to refer to different aspects of a class, its instance, and its inheritance hierarchy. Here's an explanation of <code>this</code> and <code>super</code> in Java:
+      </p>
+    
+      <h2>'this' keyword:</h2>
+      <ul>
+        <li><code>this</code> is a reference to the current instance of a class.</li>
+        <li>It can be used to refer to instance variables, instance methods, or to invoke a constructor of the same class.</li>
+        <li>It is often used to disambiguate between instance variables and method parameters or to pass the current instance as a parameter.</li>
+        <li>For example, <code>this.variableName</code> refers to the instance variable <code>variableName</code>, and <code>this.methodName()</code> invokes the instance method <code>methodName()</code>.</li>
+      </ul>
+    
+      <h2>'super' keyword:</h2>
+      <ul>
+        <li><code>super</code> is a reference to the superclass of a class or to invoke the superclass's constructor.</li>
+        <li>It can be used to access superclass variables or methods, or to invoke a superclass constructor.</li>
+        <li>It is often used to call the superclass's implementation of an overridden method or to access hidden superclass members.</li>
+        <li>For example, <code>super.variableName</code> refers to the superclass variable <code>variableName</code>, and <code>super.methodName()</code> invokes the superclass's method <code>methodName()</code>.</li>
+        <li>When invoking a constructor using <code>super</code>, it calls the constructor of the superclass.</li>
+      </ul>
+    
+      <p>
+        The <code>this</code> keyword is primarily used within a class to refer to its own instance, while the <code>super</code> keyword is used to access or invoke members of the superclass. Both keywords are helpful in scenarios where there is a need to distinguish between local variables and instance variables or to access superclass members in a subclass.
+      </p>
+    
+      <p>
+        Note: It's important to keep in mind that the usage of <code>this</code> and <code>super</code> may vary depending on the context and the specific requirements of your code.
+      </p>
+    </div>
+    <div class="sub-container fourthpage" id="fourthpage">
+      <h1>Java Keywords - final, static, and const</h1>
+      <p>
+        In Java, the keywords <code>final</code>, <code>static</code>, and <code>const</code> are used to define constants and modify the behavior of variables and methods. Here's an explanation of these keywords:
+      </p>
+
+      <h2>final keyword:</h2>
+      <p>
+        When applied to a variable, the <code>final</code> keyword makes it a constant, meaning its value cannot be changed once assigned. When applied to a method, the <code>final</code> keyword prevents the method from being overridden by subclasses. When applied to a class, the <code>final</code> keyword prevents the class from being subclassed.
+      </p>
+
+      <h2>static keyword:</h2>
+      <p>
+        When applied to a variable, the <code>static</code> keyword makes it a class variable or static variable. It means the variable belongs to the class itself rather than to individual instances of the class. All instances of the class share the same value of the static variable. When applied to a method, the <code>static</code> keyword makes it a class method or static method. It means the method can be called on the class itself, rather than on an instance of the class. When applied to a nested class, the <code>static</code> keyword makes it a static nested class, which can be accessed without an instance of the enclosing class.
+      </p>
+
+      <h2>const keyword:</h2>
+      <p>
+        Unlike in some other programming languages, such as JavaScript, Java does not have a <code>const</code> keyword. Instead, the <code>final</code> keyword is used to define constants in Java.
+      </p>
+
+      <p>
+        In summary, the <code>final</code> keyword is used for constants, preventing method overriding, and prohibiting class inheritance. The <code>static</code> keyword is used for class variables, class methods, and static nested classes. The <code>const</code> keyword is not used in Java for defining constants.
+      </p>
+    </div>
+    <div class="sub-container fifthpage" id="fifthpage">
+      <h1>Java Constructors</h1>
+      <p>
+        In Java, a constructor is a special method that is used to initialize objects of a class. It is called when an object is created using the <code>new</code> keyword and is responsible for setting initial values to the instance variables of the object. Here's some information about constructors in Java:
+      </p>
+
+      <h2>Constructor Basics:</h2>
+      <p>
+        - A constructor has the same name as the class it belongs to. <br>
+        - It does not have a return type, not even <code>void</code>. <br>
+        - It can be overloaded, meaning a class can have multiple constructors with different parameter lists. <br>
+        - If a class does not define any constructors, a default constructor (with no arguments) is automatically provided by the Java compiler. <br>
+        - If a class defines at least one constructor, the default constructor is not automatically provided, and it must be explicitly defined if needed.
+      </p>
+
+      <h2>Constructor Usage:</h2>
+      <p>
+        - Constructors are used to initialize the state of an object. They set initial values to the instance variables of the object. <br>
+        - Constructors are invoked using the <code>new</code> keyword when creating an object. <br>
+        - Constructors can perform any necessary initialization tasks, such as assigning default values, validating arguments, or calling other constructors using the <code>this</code> keyword. <br>
+        - Constructors can be used to ensure that the object being created is in a valid state before it is used. <br>
+        - Constructors can be public, private, protected, or have default (package-private) access modifiers, determining the visibility and accessibility of the constructor.
+      </p>
+
+      <h2>Constructor Example:</h2>
+      <p>
+        Here's an example of a constructor in Java:
+      </p>
+      <pre><code>public class Person {
+  private String name;
+  private int age;
+
+  // Constructor
+  public Person(String name, int age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  // Other methods and variables...
+}</code></pre>
+      <p>
+        In the above example, the <code>Person</code> class has a constructor that takes two parameters (name and age) and initializes the corresponding instance variables using the <code>this</code> keyword. The constructor is invoked when creating a new <code>Person</code> object and sets the initial values for that object.
+      </p>
+    </div>
+    <div class="sub-container sixthpage" id="sixthpage">
+      <h1>Object-Oriented Programming in Java</h1>
+      <p>
+        Object-Oriented Programming (OOP) is a programming paradigm that organizes code into objects, which represent real-world entities. Java is an object-oriented programming language, and here are some key concepts of OOP in Java:
+      </p>
+
+      <h2>Classes and Objects:</h2>
+      <p>
+        - A class is a blueprint or template that defines the structure and behavior of objects. It serves as a blueprint for creating multiple objects of the same type. <br>
+        - An object is an instance of a class. It represents a real-world entity and has its own state (attributes) and behavior (methods). <br>
+        - Objects interact with each other by invoking methods and exchanging data.
+      </p>
+
+      <h2>Encapsulation:</h2>
+      <p>
+        - Encapsulation is the mechanism of bundling data (attributes) and methods together within a class. It helps in achieving data hiding and abstraction. <br>
+        - Access modifiers (e.g., public, private, protected) control the visibility and accessibility of class members (attributes and methods) to other classes. <br>
+        - Getters and setters provide controlled access to private attributes, enabling data encapsulation.
+      </p>
+
+      <h2>Inheritance:</h2>
+      <p>
+        - Inheritance is a mechanism that allows a class to inherit properties (attributes and methods) from another class. <br>
+        - The class that is being inherited from is called the superclass or parent class, and the class that inherits is called the subclass or child class. <br>
+        - Inheritance promotes code reusability and supports the concept of hierarchy and specialization. <br>
+        - Java supports single inheritance (a subclass can inherit from only one superclass) but allows multiple levels of inheritance.
+      </p>
+
+      <h2>Polymorphism:</h2>
+      <p>
+        - Polymorphism allows objects of different classes to be treated as objects of a common superclass. <br>
+        - It enables methods to be invoked in different ways based on the actual object type. <br>
+        - Polymorphism is achieved through method overriding and method overloading in Java. <br>
+        - It promotes code flexibility and extensibility.
+      </p>
+
+      <h2>Abstraction:</h2>
+      <p>
+        - Abstraction is the process of simplifying complex systems by representing essential features and hiding unnecessary details. <br>
+        - Abstract classes and interfaces provide abstraction in Java. <br>
+        - An abstract class cannot be instantiated and serves as a base for subclasses. It can have abstract methods that must be implemented by its subclasses. <br>
+        - An interface is a contract that defines a set of methods that a class must implement. It enables multiple inheritance in Java.
+      </p>
+
+      <h2>Example:</h2>
+      <p>
+        Here's a simple example that demonstrates the concepts of OOP in Java:
+      </p>
+      <pre><code>public class Animal {
+  private String name;
+
+  public Animal(String name) {
+    this.name = name;
+  }
+
+  public void eat() {
+    System.out.println(name + " is eating.");
+  }
+
+  public static void main(String[] args) {
+    Animal cat = new Animal("Cat");
+    cat.eat();
+  }
+}</code></pre>
+      <p>
+        In the above example, the <code>Animal</code> class represents an animal entity. It has a constructor for initializing the animal's name and a method <code>eat()</code> that prints a message. The <code>main()</code> method creates an instance of the <code>Animal</code> class (a cat object) and calls the <code>eat()</code> method.
+      </p>
+    </div>
+    <div class="sub-container seventhpage" id="seventhpage">
+      <h1>Important Java Interview Questions</h1>
+
+      <h2>1. What is the difference between <code>final</code>, <code>static</code>, and <code>const</code> in Java?</h2>
+      <ol>
+        <li><code>final</code>: It is a keyword used to declare a constant variable or to make a class or method not inheritable or overridden.</li>
+        <li><code>static</code>: It is a keyword used to declare a variable or method that belongs to the class, not to the instance of the class.</li>
+        <li><code>const</code>: There is no <code>const</code> keyword in Java. In some other programming languages, it is used to declare constants.</li>
+      </ol>
+
+      <h2>2. What is the difference between <code>public</code>, <code>private</code>, <code>protected</
+      </code></pre>
+      <p>
+        2. What is the difference between <code>public</code>, <code>private</code>, <code>protected</code>, and <code>default</code> access modifiers in Java?
+      </p>
+      <p>
+        - <code>public</code>: The public access modifier allows unrestricted access to a class, its members (attributes and methods), and subclasses from any other class or package. <br>
+        - <code>private</code>: The private access modifier restricts access to the class itself. Private members can only be accessed within the same class and not from any other class or package. <br>
+        - <code>protected</code>: The protected access modifier allows access to the class itself, its members, and subclasses within the same package or from subclasses in different packages. It provides more visibility than <code>private</code> but less visibility than <code>public</code>. <br>
+        - Default (package-private): If no access modifier is specified, it is considered as the default (package-private) access. Members with default access are accessible within the same package but not from outside the package.
+      </p>
+
+      <h2>3. What is the difference between method overloading and method overriding?</h2>
+      <p>
+        - Method Overloading: Method overloading is the practice of defining multiple methods in a class with the same name but different parameter lists. The methods must differ in the number, types, or order of parameters. The compiler determines which method to invoke based on the arguments passed during the method call. Method overloading is determined at compile-time (static polymorphism). <br>
+        - Method Overriding: Method overriding occurs when a subclass provides its own implementation of a method that is already defined in its superclass. The method in the subclass must have the same name, return type, and parameter list as the method in the superclass. Method overriding is determined at runtime (dynamic polymorphism).
+      </p>
+
+      <h2>4. What is the difference between an abstract class and an interface?</h2>
+      <p>
+        - Abstract Class: An abstract class in Java is a class that cannot be instantiated. It serves as a base for subclasses and can contain abstract methods, concrete methods, and instance variables. Subclasses must implement the abstract methods of the abstract class. An abstract class can also have non-abstract methods with implementations. <br>
+        - Interface: An interface in Java is a contract that defines a set of methods that a class must implement. It contains only abstract methods (without implementations) and constants (static final variables). A class can implement multiple interfaces, providing implementation for all the methods defined in those interfaces. Interfaces are used to achieve multiple inheritance in Java.
+      </p>
+
+      <h2>5. What is the difference between <code>==</code> and <code>equals()</code> method in Java?</h2>
+      <p>
+        - <code>==</code> Operator: The <code>==</code> operator compares the memory addresses of two objects or the values of two primitive types. For objects, it checks if the two references point to the same memory location. <br>
+        - <code>equals()</code> Method: The <code>equals()</code> method is used to compare the contents (values) of two objects for equality. It is a method inherited from the <code>Object</code> class and can be overridden by classes to provide custom equality comparison. By default, it checks if the two references point to the same memory location (same as the <code>==</code> operator).
+      </p>
+
+      <h2>6. What is the difference between <code>String</code>, <code>StringBuffer</code>, and <code>StringBuilder</code> in Java?</h2>
+      <p>
+        - <code>String</code>: The <code>String</code> class represents an immutable sequence of characters. It is stored in the string pool and cannot be modified after creation. When concatenating or manipulating strings, a new string object is created. <br>
+        - <code>StringBuffer</code>: The <code>StringBuffer</code> class represents a mutable sequence of characters. It is synchronized (thread-safe) and can be modified without creating a new object. It is recommended to use <code>StringBuffer</code> when multiple threads are accessing or modifying the string. <br>
+        - <code>StringBuilder</code>: The <code>StringBuilder</code> class is similar to <code>StringBuffer</code> but is not synchronized (not thread-safe). It provides better performance than <code>StringBuffer</code> in single-threaded environments. It is recommended to use <code>StringBuilder</code> when there is no need for thread safety.
+      </p>
+
+      <h2>7. What is the <code>NullPointerException</code> in Java?</h2>
+      <p>
+        The <code>NullPointerException</code> is a runtime exception that occurs when a null reference is used where an object is expected. It indicates that an object reference is not pointing to any valid object and trying to access its members or invoke methods results in a runtime error. To avoid <code>NullPointerException</code>, it is important to check for null references before accessing them.
+      </p>
+    </div>
+  </div>
+  <script>
+   var count = 1;
+
+document.addEventListener("keydown", function (event) {
+  if (event.key === "ArrowRight") {
+    next();
+  } else if (event.key === "ArrowLeft") {
+    previous();
+  }
+  
+  document.addEventListener("touchstart", handleTouchStart, false);
+document.addEventListener("touchend", handleTouchEnd, false);
+
+var xStart = null;
+var yStart = null;
+
+function handleTouchStart(event) {
+    xStart = event.touches[0].clientX;
+    yStart = event.touches[0].clientY;
+}
+
+function handleTouchEnd(event) {
+  var xEnd = event.changedTouches[0].clientX;
+  var yEnd = event.changedTouches[0].clientY;
+  
+  var xDiff = xStart - xEnd;
+  var yDiff = yStart - yEnd;
+  
+  if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+      next();
+    } else {
+      previous();
+    }
+}
+}
+});
+
+function next() {
+  if (count === 1 && count <= 6) {
+    document.getElementById("cover").style.display = "none";
+    document.getElementById("secondpage").style.display = "block";
+    count++;
+  } else if (count === 2 && count <= 6) {
+    document.getElementById("secondpage").style.display = "none";
+    document.getElementById("thirdpage").style.display = "block";
+    count++;
+  } else if (count === 3 && count <= 6) {
+    document.getElementById("thirdpage").style.display = "none";
+    document.getElementById("fourthpage").style.display = "block";
+    count++;
+  } else if (count === 4 && count <= 6) {
+    document.getElementById("fourthpage").style.display = "none";
+    document.getElementById("fifthpage").style.display = "block";
+    count++;
+  } else if (count === 5 && count <= 6) {
+    document.getElementById("fifthpage").style.display = "none";
+    document.getElementById("sixthpage").style.display = "block";
+    count++;
+  } else if (count === 6 && count <= 6) {
+    document.getElementById("sixthpage").style.display = "none";
+    document.getElementById("seventhpage").style.display = "block";
+    count++;
+  }
+}
+
+function previous() {
+  if (count === 2 && count <= 6) {
+    document.getElementById("secondpage").style.display = "none";
+    document.getElementById("cover").style.display = "block";
+    count--;
+  } else if (count === 3 && count <= 6) {
+    document.getElementById("thirdpage").style.display = "none";
+    document.getElementById("secondpage").style.display = "block";
+    count--;
+  } else if (count === 4 && count <= 6) {
+    document.getElementById("fourthpage").style.display = "none";
+    document.getElementById("thirdpage").style.display = "block";
+    count--;
+  } else if (count === 5 && count <= 6) {
+    document.getElementById("fifthpage").style.display = "none";
+    document.getElementById("fourthpage").style.display = "block";
+    count--;
+  } else if (count === 6 && count <= 6) {
+    document.getElementById("sixthpage").style.display = "none";
+    document.getElementById("fifthpage").style.display = "block";
+    count--;
+  } else if (count === 7 && count <= 7) {
+    document.getElementById("seventhpage").style.display = "none";
+    document.getElementById("sixthpage").style.display = "block";
+    count--;
+  }
+}
+
+  </script>
+</body>
+</html>
